@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreUsersRequest;
 use App\Models\Content;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -41,7 +42,7 @@ class UserController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreUsersRequest $request)
     {
         $this->user::create([
             'name'            => $request->name,

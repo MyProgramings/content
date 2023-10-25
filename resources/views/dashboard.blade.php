@@ -78,6 +78,7 @@
                                     </a>
                                 </td>
                                 <td class="text-gray-600 px-2 py-3 text-center">
+                                    @if ($user->id != 1)
                                     <form action="{{ route('user.destroy', $user->id) }}" method="POST">
                                         @method('DELETE')
                                         @csrf
@@ -87,6 +88,7 @@
                                             {{ __('حذف') }}
                                         </x-danger-button>
                                     </form>
+                                    @endauth
                                 </td>
                                 <td class="text-gray-600 px-2 py-3 text-center">
                                     <a href="{{ route('userLink_create', $user->id) }}">
