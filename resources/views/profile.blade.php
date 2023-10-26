@@ -1,11 +1,12 @@
 <x-app-layout>
     <x-slot name="header">
         
-        {{-- <div class="flex justify-center mt-4">
+        <div class="flex justify-center mt-4">
             <div class="p-2 from-gray-700/50 flex outline outline-1 outline-blue-800">
-                <p class="text-3xl">{{ __('قسم هندسة المساحة') }}</p>
+                <p class="text-3xl">{{ __('قسم:') }}</p>
+                <p class="text-3xl">{{ __($profile->section) }}</p>
             </div>
-        </div> --}}
+        </div>
         <div class="grid grid-col-5 gap-4">
             <div class="col-start-2 col-span-1 flex justify-center w-auto items-center">
                 <img src="{{ $profile->profile_photo_url }}" alt="{{ $profile->name }}" class="rounded-full images">
@@ -19,6 +20,7 @@
                         </ul>
                         {{-- <a href="{{ route('profile.show') }}" class="border border-solid border-gray-300 rounded-md py-0 px-5 ml-16 whitespace-nowrap">تعديل الحساب</a> --}}
                     </div>
+                    
                     <div>
                         <h1 class="font-light text-3xl ml-14">{{ $profile->name }}</h1>
 

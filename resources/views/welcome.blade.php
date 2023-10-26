@@ -88,18 +88,19 @@
                         </a>
                         <div class="flex justify-center">
                             <div class="p-6 bg-white from-gray-700/50 rounded-lg shadow-2xl shadow-gray-500/20 flex text-2xl text-blue-400" dir="rtl">
-                                <a href="#" class="flex items-center pl-2 text-2xl text-blue-500">
+                                <a href="https://www.facebook.com/Academyplus77?mibextid=ZbWKwL" class="flex items-center pl-2 text-2xl text-blue-500">
                                     <i class="fa-brands fa-facebook facebook"></i>
-                                </a><a href="#" class="flex items-center pl-2 text-2xl text-red-500">
+                                </a>
+                                <a href="https://www.instagram.com/academyplus.eg/?igshid=MzRlODBiNWFlZA%3D%3D" class="flex items-center pl-2 text-2xl text-red-500">
                                     <i class="fa-brands fa-instagram instagram"></i>
                                 </a>
-                                <a href="#" class="flex items-center pl-2 text-2xl text-gray-700">
+                                {{-- <a href="#" class="flex items-center pl-2 text-2xl text-gray-700">
                                     <i class="fa-brands fa-x-twitter twitter"></i>
                                 </a>
                                 <a href="#" class="flex items-center pl-2 text-2xl text-green-500">
                                     <i class="fa-brands fa-telegram telegram"></i>
-                                </a>
-                                <a href="#" class="flex items-center pl-2 text-2xl text-blue-400">
+                                </a> --}}
+                                <a href="https://wsend.co/201092943524" class="flex items-center pl-2 text-2xl text-blue-400">
                                     <i class="fa-brands fa-whatsapp whatsapp"></i>
                                 </a>
                             </div>               

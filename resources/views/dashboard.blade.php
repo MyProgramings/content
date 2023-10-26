@@ -37,6 +37,7 @@
                                 <th class="w-10 px-2 py-3 text-center">{{ __('المعرف') }}</th>
                                 <th class="px-4 py-3 text-center"><span>{{ __('الاسم') }}</span></th>
                                 <th class="px-2 py-3 text-center">{{ __('الكود') }}</th>
+                                <th class="px-2 py-3 text-center">{{ __('القسم') }}</th>
                                 <th class="px-2 py-3 text-center">{{ __('الأيميل') }}</th>
                                 <th class="px-2 py-3 text-center">{{ __('الموقع') }}</th>
                                 <th class="px-2 py-3 text-center">{{ __('تاريخ الاضافة') }}</th>
@@ -57,6 +58,9 @@
                                 </td>
                                 <td class="text-gray-600 px-2 py-3 text-center ">
                                     {{ $user->code }}
+                                </td>
+                                <td class="text-gray-600 px-2 py-3 text-center ">
+                                    {{ $user->section }}
                                 </td>
                                 <td class="text-gray-600 px-2 py-3 text-center ">
                                     {{ $user->email }}

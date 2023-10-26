@@ -49,6 +49,7 @@ class UserController extends Controller
             'email'       => $request->email,
             'code'       => $request->code,
             'location'       => $request->location,
+            'section'       => $request->section,
             'password'       => Hash::make($request->password),
         ]);
         return redirect(Route('user.index'));

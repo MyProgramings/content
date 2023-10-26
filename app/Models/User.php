@@ -29,6 +29,7 @@ class User extends Authenticatable
         'code',
         'location',
         'password',
+        'section',
         'role',
         
     ];
@@ -69,7 +70,8 @@ class User extends Authenticatable
     public function scopeSearch($query, $req){
         $query->where(function ($query) use ($req){
             $query->where('name','like', '%' . $req . '%')
-                ->orWhere('code','like', '%' . $req . '%');
+                ->orWhere('code','like', '%' . $req . '%')
+                ->orWhere('section','like', '%' . $req . '%');
         });
     }
 

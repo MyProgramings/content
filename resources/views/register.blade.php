@@ -20,6 +20,11 @@
             </div>
 
             <div>
+                <x-label for="section" value="{{ __('القسم') }}" />
+                <x-input id="section" class="block mt-1 w-full" type="text" name="section" :value="old('section')" required autofocus autocomplete="section" />
+            </div>
+
+            <div>
                 <x-label for="code" value="{{ __('الكود') }}" />
                 <x-input id="code" class="block mt-1 w-full" type="number" name="code" :value="old('code')" required autofocus autocomplete="code" />
             </div>

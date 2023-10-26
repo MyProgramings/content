@@ -33,21 +33,21 @@
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <div class="hidden sm:-my-px sm:ml-10 sm:flex">
-                    <a href="#" class="flex items-center pl-2 text-2xl">
+                    <a href="https://www.facebook.com/Academyplus77?mibextid=ZbWKwL" class="flex items-center pl-2 text-2xl">
                         <i class="fa-brands fa-facebook text-blue-500"></i>
                     </a>
-                    <a href="#" class="flex items-center pl-2 text-2xl text-red-500">
+                    <a href="https://www.instagram.com/academyplus.eg/?igshid=MzRlODBiNWFlZA%3D%3D" class="flex items-center pl-2 text-2xl text-red-500">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#" class="flex items-center pl-2 text-2xl text-gray-700">
+                    {{-- <a href="#" class="flex items-center pl-2 text-2xl text-gray-700">
                         <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="#" class="flex items-center pl-2 text-2xl text-green-500">
+                    </a> --}}
+                    <a href="https://wsend.co/201092943524" class="flex items-center pl-2 text-2xl text-green-500">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
-                    <a href="#" class="flex items-center pl-2 text-2xl text-blue-400">
+                    {{-- <a href="#" class="flex items-center pl-2 text-2xl text-blue-400">
                         <i class="fa-brands fa-telegram"></i>
-                    </a>
+                    </a> --}}
                 </div>
                 <!-- Teams Dropdown -->
                 @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
@@ -156,6 +156,21 @@
 
             <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden">
+                <a href="https://www.facebook.com/Academyplus77?mibextid=ZbWKwL" class="flex items-center pl-2 text-2xl">
+                    <i class="fa-brands fa-facebook text-blue-500"></i>
+                </a>
+                <a href="https://www.instagram.com/academyplus.eg/?igshid=MzRlODBiNWFlZA%3D%3D" class="flex items-center pl-2 text-2xl text-red-500">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                {{-- <a href="#" class="flex items-center pl-2 text-2xl text-gray-700">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a> --}}
+                <a href="https://wsend.co/201092943524" class="flex items-center pl-2 text-2xl text-green-500">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                {{-- <a href="#" class="flex items-center pl-2 text-2xl text-blue-400">
+                    <i class="fa-brands fa-telegram"></i>
+                </a> --}}
                 <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                     <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />

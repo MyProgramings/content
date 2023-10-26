@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('section');
             $table->integer('role')->default('0');
             $table->bigInteger('code')->default('99999992');
             $table->rememberToken();

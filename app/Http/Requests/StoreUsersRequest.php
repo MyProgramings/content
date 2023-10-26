@@ -23,10 +23,11 @@ class StoreUsersRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'code' => 'required',
+            'code' => 'required|unique:users',
             'email' => 'required|unique:users',
             'location' => 'required',
             'password' => 'required',
+            'section' => 'required',
             'password_confirmation' => 'required_with:password|same:password',
         ];
     }
