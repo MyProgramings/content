@@ -64,7 +64,7 @@
                                 {{ __('app.No Data') }}</td>
                         </tr>
                         @endforelse      
-                        </table>
+                    </table>
                 </div>
             </div>
         </div>

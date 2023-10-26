@@ -1,5 +1,4 @@
 <x-app-layout>
-
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
@@ -76,9 +75,7 @@
                                 </td>
                                 <td class="text-gray-600 px-2 py-3 text-center">
                                     <a href="{{ route('user.show', $user->id) }}">
-                                        <x-secondary-button class="px-2">
-                                            {{ __('عرض') }}
-                                        </x-secondary-button>
+                                        <x-secondary-button class="px-2"> {{ __('عرض') }} </x-secondary-button>
                                     </a>
                                 </td>
                                 <td class="text-gray-600 px-2 py-3 text-center">
@@ -86,9 +83,7 @@
                                     <form action="{{ route('user.destroy', $user->id) }}" method="POST">
                                         @method('DELETE')
                                         @csrf
-                                        <x-danger-button type="submit"
-                                            onclick="return confirm('Are you shur to delete')"
-                                            class="px-2 bg-red-600 border border-transparent rounded-md font-semibold text-white uppercase tracking-widest hover:bg-red-500 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 active:bg-red-600 disabled:opacity-25 transition">
+                                        <x-danger-button type="submit" onclick="return confirm('Are you shur to delete')" class="px-2 bg-red-600 border border-transparent rounded-md font-semibold text-white uppercase tracking-widest hover:bg-red-500 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 active:bg-red-600 disabled:opacity-25 transition">
                                             {{ __('حذف') }}
                                         </x-danger-button>
                                     </form>
@@ -96,9 +91,7 @@
                                 </td>
                                 <td class="text-gray-600 px-2 py-3 text-center">
                                     <a href="{{ route('userLink_create', $user->id) }}">
-                                        <x-secondary-button class="px-2">
-                                            {{ __('إضافة رابط') }}
-                                        </x-secondary-button>
+                                        <x-secondary-button class="px-2"> {{ __('إضافة رابط') }} </x-secondary-button>
                                     </a>
                                 </td>
                             </tr>
@@ -106,10 +99,11 @@
                         @empty
                         <tr>
                             <td colspan="7" class="px-4 py-3 text-sm text-center text-gray-700">
-                                {{ __('app.No Data') }}</td>
+                                {{ __('app.No Data') }}
+                            </td>
                         </tr>
                         @endforelse      
-                        </table>
+                    </table>
                 </div>
             </div>
         </div>

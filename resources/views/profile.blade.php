@@ -18,25 +18,20 @@
                             <li class="ml-10 p-2 outline outline-1 outline-blue-800">{{ __('كود الطالب') }}</li>
                             <li class="ml-10 p-2 outline outline-1 outline-blue-800">{{ __($profile->code) }}</li>
                         </ul>
-                        {{-- <a href="{{ route('profile.show') }}" class="border border-solid border-gray-300 rounded-md py-0 px-5 ml-16 whitespace-nowrap">تعديل الحساب</a> --}}
                     </div>
-                    
                     <div>
                         <h1 class="font-light text-3xl ml-14">{{ $profile->name }}</h1>
-
                         <ul class="flex flex-row my-5 items-center">
                             <i class="fa-solid fa-location-dot ml-2 text-2xl"></i>
                             <p class="text-3xl">{{ __( $profile->location ) }}</p>
                         </ul>
                     </div>
-                   
                 </div>
             </div>
         </div>
     </x-slot>
 
     <div class="max-w-4xl my-0 mx-auto">
-        
         <hr class="mb-5">
         <div class="flex justify-center mb-6">
             <div class="w-40 p-2 outline outline-1 outline-blue-800 text-center bg-blue-800 border border-transparent text-white ">{{ __('نتائج الامتحان') }}</div>
